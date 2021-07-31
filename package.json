@@ -1,0 +1,24 @@
+{
+  "name": "web-accesskey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./src -c 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokisnojok/web-accesskey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nokisnojok/web-accesskey/issues"
+  },
+  "homepage": "https://github.com/nokisnojok/web-accesskey#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

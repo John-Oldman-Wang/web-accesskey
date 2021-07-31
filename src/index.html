@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-accesskey</title>
+    <style>
+      .p-e-n {
+        pointer-events: none;
+      }
+      .p-e-n button[accesskey] {
+        /* display: none; */
+      }
+      button {
+        user-select: none;
+      }
+      *:focus {
+        border: 1px solid #999;
+      }
+      *[data-accesskey] {
+        padding: 4px;
+        display: inline-block;
+        border-radius: 4px;
+        border: 1px solid #456;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <button accesskey="x">click alt x</button>
+    </div>
+    <div class="p-e-n">
+      <button accesskey="x">click alt x</button>
+    </div>
+    <div>
+      <button accesskey="s">click alt s</button>
+    </div> -->
+    <div>
+      <div data-accessarea>
+        这是一个可以被聚焦的区域
+        <div data-accesskey="x">click me</div>
+      </div>
+      <div data-accessarea>
+        这是一个可以被聚焦的区域
+        <div data-accesskey="x">click me</div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
